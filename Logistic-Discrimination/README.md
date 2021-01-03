@@ -8,4 +8,4 @@ The output will be the hyperplane value w and distance to the origin.
 
 ## Command for Execuion
 
-python <your py program> <data file path> <training label file path>
+python LogDisc.py testLogDisc.data testLogDisc.trainlabels.0
