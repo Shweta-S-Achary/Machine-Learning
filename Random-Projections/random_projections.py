@@ -1,7 +1,9 @@
 import sys
 from sklearn.svm import LinearSVC
 import random
+
 ###Reading Data from file
+
 def dot_product(w1,d):
 	dp1=0
 	for j in range(0,cols,1):
@@ -70,7 +72,6 @@ for i in range(0,num_rows,1):
 		#print(predictions[j],i)
 		j=j+1
 		
-#print("#####################")
 for i in range(0,k_in,1):
 	w=[]
 	for j in range(0,cols,1):
@@ -100,12 +101,8 @@ clf = LinearSVC(max_iter=10000)
 clf.fit(train_new, trainlabels)
 predictions = clf.predict(test_new)
 j=0
-#print("predication for old = ",predictions)
 for i in range(0,num_rows,1):
 	if train_labels.get(i)==None:
 		print(predictions[j],i)
 		j=j+1
-#print("predication for new = ",train_new)
-
-	
 
